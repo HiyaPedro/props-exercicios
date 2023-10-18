@@ -3,8 +3,21 @@ import "./styles.css";
 import CardVideo from "./Componentes/CardVideo";
 
 export default function App() {
-
-
+  const dataObject = {
+    title: 'How to Bake Apple Pie',
+    duration: '5mins',
+    subject: 'cooking',
+    producer: 'Peter Cooper',
+    img: 'https://picsum.photos/400/400?a=1'
+  }
+  const dataObject2 = {
+    title: 'How to Learn Portuguese',
+    duration: '10mins',
+    subject: 'language',
+    producer: 'Fernada',
+    img: 'https://picsum.photos/400/400?a=2'
+  }
+   
   
   return (
     <div>
@@ -27,14 +40,14 @@ export default function App() {
           </nav>
 
           <section className="painel-de-videos">
-              <CardVideo/>
-              <CardVideo/>
-              <CardVideo/>
-              <CardVideo/>
-              <CardVideo/>
-              <CardVideo/>
-              <CardVideo/>
-              <CardVideo/>
+              <CardVideo object={dataObject}/>
+              <CardVideo object={dataObject2}/>
+              <CardVideo object={dataObject}/>
+              <CardVideo object={dataObject}/>
+              <CardVideo object={dataObject}/>
+              <CardVideo object={dataObject}/>
+              <CardVideo object={dataObject}/>
+              <CardVideo object={dataObject}/>
           </section>
         </main>
          
